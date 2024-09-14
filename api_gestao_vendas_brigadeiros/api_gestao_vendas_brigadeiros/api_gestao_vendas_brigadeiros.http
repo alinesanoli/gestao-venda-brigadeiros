@@ -1,0 +1,6 @@
+@api_gestao_vendas_brigadeiros_HostAddress = http://localhost:5222
+
+GET {{api_gestao_vendas_brigadeiros_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

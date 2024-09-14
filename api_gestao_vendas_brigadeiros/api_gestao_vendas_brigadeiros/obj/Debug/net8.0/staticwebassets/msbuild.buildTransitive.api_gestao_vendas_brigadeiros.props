@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\api_gestao_vendas_brigadeiros.props" />
+</Project>
