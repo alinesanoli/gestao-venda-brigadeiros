@@ -12,7 +12,9 @@ A aplicação será desenvolvida com o objetivo de gerenciar todos os aspectos d
 
 **Gestão de Encomendas:** uma página para controle das encomendas. Cada encomenda incluirá o nome do cliente, a data da solicitação, data da entrega, sabores dos brigadeiros escolhidos, quantidade de cada sabor, valor a ser pago e forma de pagamento.
 
-Relatórios Mensais: uma página de relatórios que permitirá visualizar o resumo das vendas de acordo com o período (datas) informado. Incluirá total de vendas para o período selecionado, quantidade de brigadeiros vendidos organizados por sabor e valor total de insumos comprados. 
+## Funcionalidades desejáveis:
+
+**Relatórios Mensais:** uma página de relatórios que permitirá visualizar o resumo das vendas de acordo com o período (datas) informado. Incluirá total de vendas para o período selecionado, quantidade de brigadeiros vendidos organizados por sabor e valor total de insumos comprados. 
 
 ## Estrutura
 
