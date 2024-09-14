@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|c:\\curso_atos_csharp\\dotnet_csharp\\sistema_gestao_vendas_brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\repositories\\vendarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|solutionrelative:api_gestao_vendas_brigadeiros\\repositories\\vendarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|c:\\curso_atos_csharp\\dotnet_csharp\\sistema_gestao_vendas_brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\controllers\\vendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|solutionrelative:api_gestao_vendas_brigadeiros\\controllers\\vendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|c:\\curso_atos_csharp\\dotnet_csharp\\sistema_gestao_vendas_brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|solutionrelative:api_gestao_vendas_brigadeiros\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|c:\\curso_atos_csharp\\dotnet_csharp\\sistema_gestao_vendas_brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|solutionrelative:api_gestao_vendas_brigadeiros\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|c:\\curso_atos_csharp\\dotnet_csharp\\sistema_gestao_vendas_brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\models\\vendabrigadeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|solutionrelative:api_gestao_vendas_brigadeiros\\models\\vendabrigadeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|c:\\curso_atos_csharp\\dotnet_csharp\\sistema_gestao_vendas_brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|solutionrelative:api_gestao_vendas_brigadeiros\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|c:\\curso_atos_csharp\\dotnet_csharp\\sistema_gestao_vendas_brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\models\\brigadeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|solutionrelative:api_gestao_vendas_brigadeiros\\models\\brigadeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5C2CE4F-8680-4A4F-BF84-9322A2B5713E}|api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros.csproj|c:\\curso_atos_csharp\\dotnet_csharp\\sistema_gestao_vendas_brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,43 +46,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "api_gestao_vendas_brigadeiros\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "api_gestao_vendas_brigadeiros\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAqwHsAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Brigadeiro.cs",
+              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Models\\Brigadeiro.cs",
+              "RelativeDocumentMoniker": "api_gestao_vendas_brigadeiros\\Models\\Brigadeiro.cs",
+              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Models\\Brigadeiro.cs",
+              "RelativeToolTip": "api_gestao_vendas_brigadeiros\\Models\\Brigadeiro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T00:07:10.727Z",
+              "WhenOpened": "2024-09-14T17:26:57.531Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "api_gestao_vendas_brigadeiros\\Models\\Cliente.cs",
-              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Models\\Cliente.cs",
-              "RelativeToolTip": "api_gestao_vendas_brigadeiros\\Models\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "VendaBrigadeiro.cs",
+              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Models\\VendaBrigadeiro.cs",
+              "RelativeDocumentMoniker": "api_gestao_vendas_brigadeiros\\Models\\VendaBrigadeiro.cs",
+              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Models\\VendaBrigadeiro.cs",
+              "RelativeToolTip": "api_gestao_vendas_brigadeiros\\Models\\VendaBrigadeiro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T23:33:29.004Z",
+              "WhenOpened": "2024-09-14T17:26:39.959Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "VendaController.cs",
+              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Controllers\\VendaController.cs",
+              "RelativeDocumentMoniker": "api_gestao_vendas_brigadeiros\\Controllers\\VendaController.cs",
+              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Controllers\\VendaController.cs",
+              "RelativeToolTip": "api_gestao_vendas_brigadeiros\\Controllers\\VendaController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwFMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T16:00:20.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VendaRepository.cs",
+              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Repositories\\VendaRepository.cs",
+              "RelativeDocumentMoniker": "api_gestao_vendas_brigadeiros\\Repositories\\VendaRepository.cs",
+              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Repositories\\VendaRepository.cs",
+              "RelativeToolTip": "api_gestao_vendas_brigadeiros\\Repositories\\VendaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T15:57:25.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Venda.cs",
+              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Models\\Venda.cs",
+              "RelativeDocumentMoniker": "api_gestao_vendas_brigadeiros\\Models\\Venda.cs",
+              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Models\\Venda.cs",
+              "RelativeToolTip": "api_gestao_vendas_brigadeiros\\Models\\Venda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T15:57:42.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ClienteRepository.cs",
               "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Repositories\\ClienteRepository.cs",
               "RelativeDocumentMoniker": "api_gestao_vendas_brigadeiros\\Repositories\\ClienteRepository.cs",
               "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Repositories\\ClienteRepository.cs",
               "RelativeToolTip": "api_gestao_vendas_brigadeiros\\Repositories\\ClienteRepository.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAADwv44AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAIwJkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T23:24:59.3Z",
               "EditorCaption": ""
@@ -70,6 +129,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "api_gestao_vendas_brigadeiros\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "api_gestao_vendas_brigadeiros\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAcwGwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T00:07:10.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "api_gestao_vendas_brigadeiros\\Models\\Cliente.cs",
+              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\Models\\Cliente.cs",
+              "RelativeToolTip": "api_gestao_vendas_brigadeiros\\Models\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T23:33:29.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\api_gestao_vendas_brigadeiros\\api_gestao_vendas_brigadeiros\\appsettings.json",
               "RelativeDocumentMoniker": "api_gestao_vendas_brigadeiros\\appsettings.json",
@@ -77,8 +162,7 @@
               "RelativeToolTip": "api_gestao_vendas_brigadeiros\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-13T23:20:54.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T23:20:54.273Z"
             }
           ]
         }

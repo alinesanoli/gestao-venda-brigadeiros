@@ -1,50 +1,29 @@
-﻿using api_gestao_vendas_brigadeiros.Repositories;
+﻿using api_gestao_vendas_brigadeiros.Models;
+using api_gestao_vendas_brigadeiros.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using api_gestao_vendas_brigadeiros.Models;
 
 namespace api_gestao_vendas_brigadeiros.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ClienteController : ControllerBase
+    public class VendaController : ControllerBase
     {
+
         //Os controller são responsáveis por lidar com as requisições HTTP e retornar as respostas.
-        private readonly ClienteRepository repository;
+        private readonly VendaRepository repository;
 
-        public ClienteController(IConfiguration configuration)
+        public VendaController(IConfiguration configuration)
         {
-            repository = new ClienteRepository(configuration);
+            repository = new VendaRepository(configuration);
         }
 
-        [HttpGet("BuscasTodosClientes")]
-        public IActionResult BuscarTodosClientes()
+        [HttpGet("BuscasTodasVendas")]
+        public IActionResult BuscarTodasAsVendas()
         {
             try
             {
-                IEnumerable<Cliente> listaRetorno = repository.BuscarTodosClientes();
-
-                if (listaRetorno.Any())
-                {
-                    return Ok(listaRetorno);
-                }
-                return NoContent();
-
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
-        
-        }
-
-
-        [HttpGet("BuscasClientePorNome")]
-        public IActionResult BuscarClientePorNome(string nome)
-        {
-            try
-            {
-                var listaRetorno = repository.BuscarClientePorNome(nome);
+                IEnumerable<Venda> listaRetorno = repository.BuscarTodasAsVendas();
 
                 if (listaRetorno.Any())
                 {
@@ -60,17 +39,61 @@ namespace api_gestao_vendas_brigadeiros.Controllers
 
         }
 
-        [HttpPost("InserirDadosCliente")]
-        public IActionResult InserirDadosCliente([FromBody] Cliente cliente)
+
+        [HttpGet("BuscasClientePorId")]
+        public IActionResult BuscarPorId(int id)
+        {
+            try
+            {
+                var listaRetorno = repository.BuscarPorId(id);
+
+                if (listaRetorno.Any())
+                {
+                    return Ok(listaRetorno);
+                }
+                return NoContent();
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+
+        }
+
+
+        [HttpGet("BuscasVendaPorData")]
+        public IActionResult BuscarPorData(DateTime data)
+        {
+            try
+            {
+                var listaRetorno = repository.BuscarPorData(data);
+
+                if (listaRetorno.Any())
+                {
+                    return Ok(listaRetorno);
+                }
+                return NoContent();
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+
+        }
+
+        [HttpPost("InserirDadosVendas")]
+        public IActionResult InserirDadosVenda([FromBody] Venda venda)
         {
 
-            if (cliente == null)
+            if (venda == null)
             {
                 return BadRequest("Dados da cliente inválidos");
             }
             try
             {
-                var listaRetorno = repository.InserirDadosCliente(cliente);
+                var listaRetorno = repository.InserirVendas(venda);
 
                 if (listaRetorno > 0)
                 {
@@ -91,14 +114,14 @@ namespace api_gestao_vendas_brigadeiros.Controllers
 
 
         [HttpPut("{id}")]
-        public IActionResult AtualizarDadosCliente(int id, [FromBody] Cliente cliente)
+        public IActionResult AtualizarVenda( [FromBody] Venda venda, int id)
         {
-            if (cliente == null)
+            if (venda == null)
             {
                 return BadRequest("Dados do cliente estão ausentes.");
             }
 
-            var linhasRetorno = repository.AtualizacaoDeCliente(cliente, id);
+            var linhasRetorno = repository.AtualizacaoDeVenda(venda, id);
 
             if (linhasRetorno > 0)
             {
@@ -106,17 +129,17 @@ namespace api_gestao_vendas_brigadeiros.Controllers
             }
             else
             {
-                return NotFound("Cliente não encontrado!");
+                return NotFound("Venda não encontrada!");
 
             }
         }
 
         [HttpDelete("{id}")]
-        public IActionResult ExcluirCliente(int id)
+        public IActionResult ExcluirVenda(int id)
         {
             try
             {
-                int numLinhas = repository.ExcluirDadosCliente(id);
+                int numLinhas = repository.ExcluirVenda(id);
                 return Ok($"Número de linhas excluídas: {numLinhas}");
             }
             catch (Exception ex)
@@ -125,6 +148,5 @@ namespace api_gestao_vendas_brigadeiros.Controllers
             }
 
         }
-
     }
 }
