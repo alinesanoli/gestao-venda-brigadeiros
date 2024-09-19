@@ -45,7 +45,7 @@ namespace api_gestao_vendas_brigadeiros.Controllers
         {
             try
             {
-                var listaRetorno = repository.BuscarPorId(id);
+                var listaRetorno = repository.BuscarVendaPorId(id);
 
                 if (listaRetorno.Any())
                 {
@@ -113,7 +113,7 @@ namespace api_gestao_vendas_brigadeiros.Controllers
         }
 
 
-        [HttpPut("{id}")]
+        [HttpPut("Atualizar/{id}")]
         public IActionResult AtualizarVenda( [FromBody] Venda venda, int id)
         {
             if (venda == null)
@@ -134,7 +134,7 @@ namespace api_gestao_vendas_brigadeiros.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("Excluir/{id}")]
         public IActionResult ExcluirVenda(int id)
         {
             try

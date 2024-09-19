@@ -47,7 +47,7 @@ namespace api_gestao_vendas_brigadeiros.Repositories
         }
 
 
-        public IList<Venda> BuscarPorId(int Id)
+        public IList<Venda> BuscarVendaPorId(int Id)
         {
             try
             {
