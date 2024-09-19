@@ -33,6 +33,6 @@ Front-end:
 - [x]  11/09/2024 - Iniciar construção do banco de dados;
 - [x]  13/09/2024 - Entregar construção do banco de dados;
 - [x]  13/09/2024 - Iniciar construção da API;
-- [ ]  18/09/2024 - Entrega da API;
-- [ ]  18/09/2024 - Iniciar construção dos páginas do Web Forms;
+- [ ]  21/09/2024 - Entrega da API;
+- [ ]  21/09/2024 - Iniciar construção dos páginas do Web Forms;
 - [ ]  25/09/2024 - Entrega do projeto em funcionamento.
