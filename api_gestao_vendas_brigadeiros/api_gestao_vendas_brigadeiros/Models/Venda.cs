@@ -2,7 +2,7 @@
 
 using System.Data;
 using System.Data.SqlClient;
-using System.Text.Json.Serialization;
+
 
 namespace api_gestao_vendas_brigadeiros.Models
 {
@@ -13,14 +13,8 @@ namespace api_gestao_vendas_brigadeiros.Models
         public DateTime DataVenda { get; set; }
         public decimal ValorTotal { get; set; }
         public string FormaPagamento { get; set; }
-        public List<VendaBrigadeiro> Brigadeiro { get; set; }
-        public string DataVendaFormatada
-        {
-            get
-            {
-                return DataVenda.ToString("dd/MM/yyyy");
-            }
-        }
+        public List<VendaBrigadeiro> VendaBrigadeiro { get; set; }
+
 
         public Venda() { }
 
@@ -32,7 +26,7 @@ namespace api_gestao_vendas_brigadeiros.Models
             ValorTotal = reader.GetDecimal(reader.GetOrdinal("ValorTotal"));
             FormaPagamento = reader.GetString(reader.GetOrdinal("FormaPagamento"));
 
-            Brigadeiro = new List<VendaBrigadeiro>();
+            VendaBrigadeiro = new List<VendaBrigadeiro>();
         }
     }
 }

@@ -1,38 +1,78 @@
-# Sistema de Gestão de Vendas de brigadeiros
+# Documentação Técnica do Projeto: Gestão de Vendas de Brigadeiros
+## 1. Banco de Dados
+### SQL Server
+- **Versão**: SQL Server 2022.
+### Estrutura do Banco de Dados
+O banco de dados é composto pelas seguintes tabelas:
 
-A aplicação será desenvolvida com o objetivo de gerenciar todos os aspectos das vendas de brigadeiros, incluindo a gestão de clientes, vendas, insumos e encomendas. O sistema permitirá um controle das transações diárias, ajudando a otimizar o processo de venda e a organização das encomendas.
+1. **Clientes**
+   - **Descrição**: Armazena informações dos clientes, como nome, telefone, endereço, email e data de cadastro.
 
-## Funcionalidades principais:
+2. **Brigadeiros**
+   - **Descrição**: Contém os sabores dos brigadeiros disponíveis para venda.
 
-**Cadastro de Clientes**: uma página para registro de novos clientes, com a possibilidade de editar e excluir dados. Incluíra informações de nome, telefone, endereço, e-mail e histórico de compras.
+3. **Gastos**
+   - **Descrição**: Registra os gastos com insumos, incluindo o valor unitário, quantidade comprada e data da compra. O valor total é calculado automaticamente.
 
-**Controle de Vendas:** uma página para registrar as vendas diárias. Incluirá informações de quantidade de brigadeiros vendidos, seus respectivos sabores, valor vendido, forma de pagamento e a data da venda.
+4. **Vendas**
+   - **Descrição**: Guarda informações sobre as vendas realizadas, incluindo o cliente associado, data da venda, valor total e forma de pagamento.
 
-**Gerenciamento de Insumos:** uma página para controle de insumos, onde será possível cadastrar, atualizar e excluir os dados. Incluirá o nome do insumo, valor da unidade, quantidade comprada, valor total do insumo comprado (valor unitário * quantidade) e a data da compra.
+5. **VendaBrigadeiros**
+   - **Descrição**: Relaciona os brigadeiros vendidos em uma venda específica, armazenando a quantidade de cada brigadeiro vendido.
 
-**Gestão de Encomendas:** uma página para controle das encomendas. Cada encomenda incluirá o nome do cliente, a data da solicitação, data da entrega, sabores dos brigadeiros escolhidos, quantidade de cada sabor, valor a ser pago e forma de pagamento.
+6. **Encomendas**
+   - **Descrição**: Registra as encomendas feitas pelos clientes, incluindo data de solicitação, data de entrega, valor total e forma de pagamento.
 
-## Funcionalidades desejáveis:
+7. **EncomendaBrigadeiros**
+   - **Descrição** Relaciona os brigadeiros associados a uma encomenda específica, armazenando a quantidade de cada brigadeiro encomendado.
 
-**Relatórios Mensais:** uma página de relatórios que permitirá visualizar o resumo das vendas de acordo com o período (datas) informado. Incluirá total de vendas para o período selecionado, quantidade de brigadeiros vendidos organizados por sabor e valor total de insumos comprados. 
+### Exemplo de Estrutura SQL
+```sql
+CREATE TABLE Clientes (
+    IdCliente INT PRIMARY KEY IDENTITY,
+    Nome NVARCHAR(100) NOT NULL,
+    Telefone NVARCHAR(20) NOT NULL,
+    Endereco NVARCHAR(255),
+    Email NVARCHAR(100),
+    DataCadastro DATETIME DEFAULT GETDATE()
+);
+```
+## 2. Tecnologias Utilizadas
+- **C#**: Utilizado para a implementação do backend da aplicação.
+- **ADO.NET**: Utilizado para a interação com o banco de dados SQL Server, permitindo a execução de comandos SQL e manipulação de dados.
+- **API ASP.NET**: A API utiliza o ADO.NET para gerenciar operações de CRUD (Create, Read, Update, Delete) nas tabelas do banco de dados. Utilizou-se o ADO.NET como uma opção paliativa, pois ainda não consegui conectar a API no Web Forms
+- **Web Forms**: Utilizado para a criação de páginas web dinâmicas, permitindo a construção das páginas "Sobre", "Vendas" e "Gastos".
+- **CSS**: Usado para o estilização das páginas web.
 
-## Estrutura
+### Pacotes NuGet
 
-Back-end: 
+- **System.Data.SqlClient**: Fornece classes para trabalhar com SQL Server, permitindo a conexão e a execução de comandos no banco de dados.
+- **System.Data**: Fornece classes fundamentais para trabalhar com dados e bases de dados, incluindo suporte para a criação de conexões, comandos e manipulação de dados.
 
-- Toda a lógica de negócios, validações e interação com o banco (ADO.NET) ocorrerá através de uma API.
+## 3. Uso de APIs
+A aplicação faz uso de APIs RESTful para gerenciar operações de CRUD (Criar, Ler, Atualizar e Deletar) nas entidades do sistema.
 
-Front-end: 
+### Chamadas das APIs
+- **Clientes**
 
-- As interfaces para a interação do usuário com o sistema serão elaboradas utilizando o Web Forms.
-- As páginas Web Forms consumirão a API para exibir e enviar dados.
+    - GET /api/Clientes/BuscasTodosClientes: Retorna uma lista de todos os clientes.
+    - GET /api/Clientes/BuscasTodosClientesPorNome: Retorna o cadastro do cliente a partir do nome informado.
+    - POST /api/Clientes/InserirDadosCliente: Insere um novo cliente no banco de dados.
+    - PUT /api/Clientes/AtualizarClientes: Atualiza as informações de cadastro do cliente de acordo com o id informado.
+    - DELETE /api/Clientes/ExclurrClientes: Deleta o cadastro do cliente de acordo com o id informado.
+- **Vendas**
 
-## Cronograma
+    - GET /api/Venda/BuscarTodasVendas: Retorna uma lista de todas as vendas.
+    - POST /api/Venda/InserirDadosVendas: Insere uma nova venda no banco de dados.
+- **Gastos**
+    - GET /api/GastosBrigadeiro/BuscarTodosOsGastos: Retorna uma lista de todos os gastos registrados.
+    - POST /api/GastosBrigadeiro/InserirGasto: Insere um novo gasto no banco de dados.
+- **Encomenda**
+    - GET /api/GastosBrigadeiro/BuscarTodosOsGastos: Retorna uma lista de todos os gastos registrados.
+    - POST /api/GastosBrigadeiro/InserirGasto: Insere um novo gasto no banco de dados.
+## 4. GitHub
+Repositório: https://github.com/alinesanoli
+Detalhes Relevantes: O repositório contém toda a estrutura do projeto, incluindo as classes do backend, a estrutura do banco de dados e as páginas web. Utilize o comando git clone para clonar o repositório.
 
-- [x]  11/09/2024 - Entregar Planejamento;
-- [x]  11/09/2024 - Iniciar construção do banco de dados;
-- [x]  13/09/2024 - Entregar construção do banco de dados;
-- [x]  13/09/2024 - Iniciar construção da API;
-- [ ]  21/09/2024 - Entrega da API;
-- [ ]  21/09/2024 - Iniciar construção dos páginas do Web Forms;
-- [ ]  25/09/2024 - Entrega do projeto em funcionamento.
+## 5. Considerações Finais
+Esta documentação fornece uma visão geral do projeto e suas principais funcionalidades. Para detalhes mais específicos, consulte o código fonte disponível no repositório do GitHub.

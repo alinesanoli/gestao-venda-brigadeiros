@@ -1,12 +1,11 @@
 ﻿
 using api_gestao_vendas_brigadeiros.Repositories;
 using api_gestao_vendas_brigadeiros.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api_gestao_vendas_brigadeiros.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Venda-Brigadeiro")]
     [ApiController]
     public class VendaBrigadeiroController : ControllerBase
     {
@@ -65,8 +64,8 @@ namespace api_gestao_vendas_brigadeiros.Controllers
 
 
 
-        [HttpPost("{id}")]
-        public IActionResult AdicionarBrigadeiroAVenda(int id, [FromBody] VendaBrigadeiro vendaBrigadeiro)
+        [HttpPost("InserirBrigadeiroAVenda{id}")]
+        public IActionResult AdicionarBrigadeiroAVenda(int id, [FromBody] List<VendaBrigadeiro> vendaBrigadeiros)
         {
             var venda = _repository.BuscarVendaPorId(id);
             if ( venda == null)
@@ -75,9 +74,17 @@ namespace api_gestao_vendas_brigadeiros.Controllers
             }
             try
             {
-                var listaRetorno = repository.AdicionarBrigadeiroAVenda(vendaBrigadeiro.IdVenda, vendaBrigadeiro.IdBrigadeiro, vendaBrigadeiro.Quantidade);
+                int totalLinhasAfetadas = 0;
 
-                if (listaRetorno > 0)
+                // Itera sobre a lista de brigadeiros e adiciona à encomenda
+                foreach (var vendaBrigadeiro in vendaBrigadeiros)
+                {
+                    var linhasAfetadas = repository.AdicionarBrigadeiroAVenda(id, vendaBrigadeiro.IdBrigadeiro, vendaBrigadeiro.Quantidade);
+                    totalLinhasAfetadas += linhasAfetadas;
+                }
+
+
+                if (totalLinhasAfetadas > 0)
                 {
                     return Ok("Brigadeiro adicionados à venda com sucesso");
                 }

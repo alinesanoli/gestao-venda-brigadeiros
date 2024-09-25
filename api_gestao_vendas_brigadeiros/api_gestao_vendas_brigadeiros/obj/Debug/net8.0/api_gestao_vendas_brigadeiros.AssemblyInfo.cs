@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("api_gestao_vendas_brigadeiros")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dcb9879a3199af875e5aca8b0d1de427616d4665")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c64d82ca51921a82643660e04bf8d54b1a5f90c")]
 [assembly: System.Reflection.AssemblyProductAttribute("api_gestao_vendas_brigadeiros")]
 [assembly: System.Reflection.AssemblyTitleAttribute("api_gestao_vendas_brigadeiros")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

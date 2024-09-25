@@ -1,8 +1,45 @@
 [
   {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.EncomendaBrigadeiroController",
+    "Method": "BuscarBrigadeirosVendas",
+    "RelativePath": "api/BrigadeirosEncomenda/BuscarBrigadeirosPorEncomenda/{idEncomenda}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idEncomenda",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.EncomendaBrigadeiroController",
+    "Method": "AdicionarBrigadeiroAVenda",
+    "RelativePath": "api/BrigadeirosEncomenda/InserirBrigadeiroAEncomenda/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "encomendaBrigadeiros",
+        "Type": "System.Collections.Generic.List\u00601[[api_gestao_vendas_brigadeiros.Models.EncomendaBrigadeiro, api_gestao_vendas_brigadeiros, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.ClienteController",
     "Method": "AtualizarDadosCliente",
-    "RelativePath": "api/Cliente/{id}",
+    "RelativePath": "api/Clientes/AtualizarCliente/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -22,24 +59,8 @@
   },
   {
     "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.ClienteController",
-    "Method": "ExcluirCliente",
-    "RelativePath": "api/Cliente/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.ClienteController",
     "Method": "BuscarClientePorNome",
-    "RelativePath": "api/Cliente/BuscasClientePorNome",
+    "RelativePath": "api/Clientes/BuscasClientePorNome",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -55,7 +76,7 @@
   {
     "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.ClienteController",
     "Method": "BuscarTodosClientes",
-    "RelativePath": "api/Cliente/BuscasTodosClientes",
+    "RelativePath": "api/Clientes/BuscasTodosClientes",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -64,8 +85,24 @@
   },
   {
     "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.ClienteController",
+    "Method": "ExcluirCliente",
+    "RelativePath": "api/Clientes/ExcluirCliente/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.ClienteController",
     "Method": "InserirDadosCliente",
-    "RelativePath": "api/Cliente/InserirDadosCliente",
+    "RelativePath": "api/Clientes/InserirDadosCliente",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -79,9 +116,109 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.EncomendaController",
+    "Method": "AtualizarGasto",
+    "RelativePath": "api/Encomenda/AtualizarEncomenda/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "encomenda",
+        "Type": "api_gestao_vendas_brigadeiros.Models.Encomenda",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.EncomendaController",
+    "Method": "BuscarTodasAsEncomendas",
+    "RelativePath": "api/Encomenda/BuscarTodasAsEncomendas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.EncomendaController",
+    "Method": "BuscarEncomendaPorId",
+    "RelativePath": "api/Encomenda/BuscasEncomendaPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.EncomendaController",
+    "Method": "ExcluirEncomenda",
+    "RelativePath": "api/Encomenda/ExcluirEncomenda/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.EncomendaController",
+    "Method": "InserirEncomenda",
+    "RelativePath": "api/Encomenda/InserirEncomenda",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "encomenda",
+        "Type": "api_gestao_vendas_brigadeiros.Models.Encomenda",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.GastoController",
+    "Method": "AtualizarGasto",
+    "RelativePath": "api/GastosBrigadeiro/AtualizarGasto/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gasto",
+        "Type": "api_gestao_vendas_brigadeiros.Models.Gasto",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.GastoController",
     "Method": "BuscarTodosOsGastos",
-    "RelativePath": "api/Gasto/BuscasTodosOsGastos",
+    "RelativePath": "api/GastosBrigadeiro/BuscarTodosOsGastos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -90,8 +227,24 @@
   },
   {
     "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.GastoController",
+    "Method": "ExcluirGasto",
+    "RelativePath": "api/GastosBrigadeiro/ExcluirGasto/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.GastoController",
     "Method": "InserirGasto",
-    "RelativePath": "api/Gasto/InserirGasto",
+    "RelativePath": "api/GastosBrigadeiro/InserirGasto",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -105,9 +258,56 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.VendaBrigadeiroController",
+    "Method": "BuscarBrigadeirosVendas",
+    "RelativePath": "api/Venda-Brigadeiro/BuscarBrigadeirosPorVendas/{idVenda}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idVenda",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.VendaBrigadeiroController",
+    "Method": "BuscarTodosVendasBrigadeiros",
+    "RelativePath": "api/Venda-Brigadeiro/BuscarTodosVendasBrigadeiros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.VendaBrigadeiroController",
+    "Method": "AdicionarBrigadeiroAVenda",
+    "RelativePath": "api/Venda-Brigadeiro/InserirBrigadeiroAVenda{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "vendaBrigadeiros",
+        "Type": "System.Collections.Generic.List\u00601[[api_gestao_vendas_brigadeiros.Models.VendaBrigadeiro, api_gestao_vendas_brigadeiros, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.VendaController",
     "Method": "AtualizarVenda",
-    "RelativePath": "api/Venda/Atualizar/{id}",
+    "RelativePath": "api/Venda/AtualizarVenda/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -127,24 +327,8 @@
   },
   {
     "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.VendaController",
-    "Method": "BuscarPorId",
-    "RelativePath": "api/Venda/BuscasClientePorId",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.VendaController",
     "Method": "BuscarTodasAsVendas",
-    "RelativePath": "api/Venda/BuscasTodasVendas",
+    "RelativePath": "api/Venda/BuscarTodasVendas",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -154,7 +338,7 @@
   {
     "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.VendaController",
     "Method": "BuscarPorData",
-    "RelativePath": "api/Venda/BuscasVendaPorData",
+    "RelativePath": "api/Venda/BuscarVendaPorData",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -169,8 +353,24 @@
   },
   {
     "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.VendaController",
+    "Method": "BuscarVendaPorId",
+    "RelativePath": "api/Venda/BuscarVendaPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.VendaController",
     "Method": "ExcluirVenda",
-    "RelativePath": "api/Venda/Excluir/{id}",
+    "RelativePath": "api/Venda/ExcluirVenda/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -197,53 +397,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.VendaBrigadeiroController",
-    "Method": "AdicionarBrigadeiroAVenda",
-    "RelativePath": "api/VendaBrigadeiro/{id}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "vendaBrigadeiro",
-        "Type": "api_gestao_vendas_brigadeiros.Models.VendaBrigadeiro",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.VendaBrigadeiroController",
-    "Method": "BuscarBrigadeirosVendas",
-    "RelativePath": "api/VendaBrigadeiro/BuscarBrigadeirosPorVendas/{idVenda}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "idVenda",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "api_gestao_vendas_brigadeiros.Controllers.VendaBrigadeiroController",
-    "Method": "BuscarTodosVendasBrigadeiros",
-    "RelativePath": "api/VendaBrigadeiro/BuscarTodosVendasBrigadeiros",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   }
 ]

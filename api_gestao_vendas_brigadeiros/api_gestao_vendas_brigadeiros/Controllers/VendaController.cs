@@ -2,10 +2,12 @@
 using api_gestao_vendas_brigadeiros.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using static System.Net.WebRequestMethods;
+using System.Runtime.Intrinsics.X86;
 
 namespace api_gestao_vendas_brigadeiros.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Venda")]
     [ApiController]
     public class VendaController : ControllerBase
     {
@@ -18,7 +20,7 @@ namespace api_gestao_vendas_brigadeiros.Controllers
             repository = new VendaRepository(configuration);
         }
 
-        [HttpGet("BuscasTodasVendas")]
+        [HttpGet("BuscarTodasVendas")]
         public IActionResult BuscarTodasAsVendas()
         {
             try
@@ -40,8 +42,8 @@ namespace api_gestao_vendas_brigadeiros.Controllers
         }
 
 
-        [HttpGet("BuscasClientePorId")]
-        public IActionResult BuscarPorId(int id)
+        [HttpGet("BuscarVendaPorId")]
+        public IActionResult BuscarVendaPorId(int id)
         {
             try
             {
@@ -62,7 +64,7 @@ namespace api_gestao_vendas_brigadeiros.Controllers
         }
 
 
-        [HttpGet("BuscasVendaPorData")]
+        [HttpGet("BuscarVendaPorData")]
         public IActionResult BuscarPorData(DateTime data)
         {
             try
@@ -89,7 +91,7 @@ namespace api_gestao_vendas_brigadeiros.Controllers
 
             if (venda == null)
             {
-                return BadRequest("Dados da cliente inválidos");
+                return BadRequest("Venda não localizada");
             }
             try
             {
@@ -97,7 +99,8 @@ namespace api_gestao_vendas_brigadeiros.Controllers
 
                 if (listaRetorno > 0)
                 {
-                    return Ok("Dados inseridos com sucesso");
+                    // Retorna o id da encomenda criada e uma resposta HTTP 201(Created)
+                    return CreatedAtAction(nameof(BuscarVendaPorId), new { id = listaRetorno }, venda);
                 }
                 else
                 {
@@ -113,12 +116,12 @@ namespace api_gestao_vendas_brigadeiros.Controllers
         }
 
 
-        [HttpPut("Atualizar/{id}")]
+        [HttpPut("AtualizarVenda/{id}")]
         public IActionResult AtualizarVenda( [FromBody] Venda venda, int id)
         {
             if (venda == null)
             {
-                return BadRequest("Dados do cliente estão ausentes.");
+                return BadRequest("Venda não localizada.");
             }
 
             var linhasRetorno = repository.AtualizacaoDeVenda(venda, id);
@@ -134,7 +137,7 @@ namespace api_gestao_vendas_brigadeiros.Controllers
             }
         }
 
-        [HttpDelete("Excluir/{id}")]
+        [HttpDelete("ExcluirVenda/{id}")]
         public IActionResult ExcluirVenda(int id)
         {
             try

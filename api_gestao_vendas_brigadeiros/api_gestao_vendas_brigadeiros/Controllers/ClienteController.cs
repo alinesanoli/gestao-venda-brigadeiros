@@ -5,7 +5,7 @@ using api_gestao_vendas_brigadeiros.Models;
 
 namespace api_gestao_vendas_brigadeiros.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Clientes")]
     [ApiController]
     public class ClienteController : ControllerBase
     {
@@ -90,7 +90,7 @@ namespace api_gestao_vendas_brigadeiros.Controllers
         }
 
 
-        [HttpPut("{id}")]
+        [HttpPut("AtualizarCliente/{id}")]
         public IActionResult AtualizarDadosCliente(int id, [FromBody] Cliente cliente)
         {
             if (cliente == null)
@@ -111,7 +111,7 @@ namespace api_gestao_vendas_brigadeiros.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("ExcluirCliente/{id}")]
         public IActionResult ExcluirCliente(int id)
         {
             try

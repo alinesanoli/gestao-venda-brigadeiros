@@ -1,0 +1,69 @@
+﻿/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFAFA;
+    margin: 0;
+    padding: 0;
+    color: #A52A2A;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFC0CB;
+    border-radius: 10px;
+}
+
+    header h1 {
+        color: #A52A2A;
+        font-size: 2.5em;
+    }
+
+/* Seção dos brigadeiros */
+.brigadeiros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.brigadeiro-item {
+    background-color: #FFC0CB;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+    .brigadeiro-item:hover {
+        transform: scale(1.05);
+    }
+
+    .brigadeiro-item h2 {
+        color: #A52A2A;
+        font-size: 1.8em;
+    }
+
+    .brigadeiro-item p {
+        color: #A52A2A;
+        font-size: 1.1em;
+    }
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #A52A2A;
+    color: #FFFAFA;
+    border-radius: 10px;
+}

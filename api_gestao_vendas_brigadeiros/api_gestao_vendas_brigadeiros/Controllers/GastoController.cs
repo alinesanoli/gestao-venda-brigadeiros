@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace api_gestao_vendas_brigadeiros.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/GastosBrigadeiro")]
     [ApiController]
     public class GastoController : ControllerBase
     {
@@ -17,7 +17,7 @@ namespace api_gestao_vendas_brigadeiros.Controllers
             repository = new GastoRepository(configuration);
         }
 
-        [HttpGet("BuscasTodosOsGastos")]
+        [HttpGet("BuscarTodosOsGastos")]
         public IActionResult BuscarTodosOsGastos()
         {
 
@@ -68,5 +68,42 @@ namespace api_gestao_vendas_brigadeiros.Controllers
             }
         }
 
+        [HttpPut("AtualizarGasto/{id}")]
+        public IActionResult AtualizarGasto([FromBody] Gasto gasto, int id)
+        {
+            if (gasto == null)
+            {
+                return BadRequest("Gasto não localizado.");
+            }
+
+            var linhasRetorno = repository.AtualizarGasto(gasto, id);
+
+            if (linhasRetorno > 0)
+            {
+                return Ok("Dados atualizados com sucesso!");
+            }
+            else
+            {
+                return NotFound("Gasto não encontrado!");
+
+            }
+        }
+
+        [HttpDelete("ExcluirGasto/{id}")]
+        public IActionResult ExcluirGasto(int id)
+        {
+            try
+            {
+                int numLinhas = repository.ExcluirGasto(id);
+                return Ok($"Número de linhas excluídas: {numLinhas}");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+
+        }
     }
+
 }
+

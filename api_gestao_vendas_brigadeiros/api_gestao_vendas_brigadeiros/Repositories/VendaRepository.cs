@@ -109,6 +109,7 @@ namespace api_gestao_vendas_brigadeiros.Repositories
 
         }
         #endregion
+
         #region |Método de inserção |
         public int InserirVendas(Venda venda)
         {
@@ -116,15 +117,32 @@ namespace api_gestao_vendas_brigadeiros.Repositories
             {
                 connection.Open();
                 string sql = "INSERT INTO Vendas (IdCliente, DataVenda, ValorTotal, FormaPagamento)" +
+                    "OUTPUT INSERTED.IdVenda " + // Aqui você captura o Id gerado
                     " VALUES (@IdCliente, @DataVenda, @ValorTotal, @FormaPagamento)";
                 using SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@IdCliente", venda.IdCliente);
-                command.Parameters.AddWithValue("@DataVenda", venda.DataVendaFormatada);
+                command.Parameters.AddWithValue("@DataVenda", venda.DataVenda);
                 command.Parameters.AddWithValue("@ValorTotal", venda.ValorTotal);
                 command.Parameters.AddWithValue("@FormaPagamento", venda.FormaPagamento);
 
+                // Executa o comando e obtém o IdEncomenda gerado
+                var idVenda = (int)command.ExecuteScalar();
 
-                return command.ExecuteNonQuery();
+                // Insira os brigadeiros relacionados
+                foreach (var brigadeiro in venda.VendaBrigadeiro)
+                {
+                    string sqlBrigadeiro = "INSERT INTO VendaBrigadeiros (IdVenda, IdBrigadeiro, Quantidade) " +
+                                           "VALUES (@IdVenda, @IdBrigadeiro, @Quantidade)";
+
+                    using SqlCommand commandBrigadeiro = new SqlCommand(sqlBrigadeiro, connection);
+                    commandBrigadeiro.Parameters.AddWithValue("@IdVenda", idVenda);
+                    commandBrigadeiro.Parameters.AddWithValue("@IdBrigadeiro", brigadeiro.IdBrigadeiro);
+                    commandBrigadeiro.Parameters.AddWithValue("@Quantidade", brigadeiro.Quantidade);
+                    commandBrigadeiro.ExecuteNonQuery();
+                }
+
+                return idVenda;
+
             }
             finally
             {
@@ -146,7 +164,7 @@ namespace api_gestao_vendas_brigadeiros.Repositories
                     "WHERE IdVenda = @Id";
                 using SqlCommand commandUpd = new SqlCommand(sqlUpd, connection);
                 commandUpd.Parameters.AddWithValue("@IdCliente", venda.IdCliente);
-                commandUpd.Parameters.AddWithValue("@DataVenda", venda.DataVendaFormatada);
+                commandUpd.Parameters.AddWithValue("@DataVenda", venda.DataVenda);
                 commandUpd.Parameters.AddWithValue("@ValorTotal", venda.ValorTotal);
                 commandUpd.Parameters.AddWithValue("@FormaPagamento", venda.FormaPagamento);
                 commandUpd.Parameters.AddWithValue("@Id", id);

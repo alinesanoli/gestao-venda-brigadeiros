@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\gestao_vendas_\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EDC83E94-020D-43F6-A4D7-18AB9338F7DB}|gestao_vendas_\\gestao_vendas_.csproj|c:\\curso_atos_csharp\\dotnet_csharp\\sistema_gestao_vendas_brigadeiro\\gestao_vendas_\\gestao_vendas_\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{EDC83E94-020D-43F6-A4D7-18AB9338F7DB}|gestao_vendas_\\gestao_vendas_.csproj|solutionrelative:gestao_vendas_\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDC83E94-020D-43F6-A4D7-18AB9338F7DB}|gestao_vendas_\\gestao_vendas_.csproj|c:\\curso_atos_csharp\\dotnet_csharp\\sistema_gestao_vendas_brigadeiro\\gestao_vendas_\\gestao_vendas_\\sobre.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EDC83E94-020D-43F6-A4D7-18AB9338F7DB}|gestao_vendas_\\gestao_vendas_.csproj|solutionrelative:gestao_vendas_\\sobre.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDC83E94-020D-43F6-A4D7-18AB9338F7DB}|gestao_vendas_\\gestao_vendas_.csproj|c:\\curso_atos_csharp\\dotnet_csharp\\sistema_gestao_vendas_brigadeiro\\gestao_vendas_\\gestao_vendas_\\sobre.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDC83E94-020D-43F6-A4D7-18AB9338F7DB}|gestao_vendas_\\gestao_vendas_.csproj|solutionrelative:gestao_vendas_\\sobre.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDC83E94-020D-43F6-A4D7-18AB9338F7DB}|gestao_vendas_\\gestao_vendas_.csproj|c:\\curso_atos_csharp\\dotnet_csharp\\sistema_gestao_vendas_brigadeiro\\gestao_vendas_\\gestao_vendas_\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EDC83E94-020D-43F6-A4D7-18AB9338F7DB}|gestao_vendas_\\gestao_vendas_.csproj|solutionrelative:gestao_vendas_\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\gestao_vendas_\\gestao_vendas_\\Site.Master",
+              "RelativeDocumentMoniker": "gestao_vendas_\\Site.Master",
+              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\gestao_vendas_\\gestao_vendas_\\Site.Master*",
+              "RelativeToolTip": "gestao_vendas_\\Site.Master*",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-24T08:54:06.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StyleSheet.css",
+              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\gestao_vendas_\\gestao_vendas_\\StyleSheet.css",
+              "RelativeDocumentMoniker": "gestao_vendas_\\StyleSheet.css",
+              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\gestao_vendas_\\gestao_vendas_\\StyleSheet.css",
+              "RelativeToolTip": "gestao_vendas_\\StyleSheet.css",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAuwEcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-24T08:53:25.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sobre.aspx.cs",
+              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\gestao_vendas_\\gestao_vendas_\\Sobre.aspx.cs",
+              "RelativeDocumentMoniker": "gestao_vendas_\\Sobre.aspx.cs",
+              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\gestao_vendas_\\gestao_vendas_\\Sobre.aspx.cs",
+              "RelativeToolTip": "gestao_vendas_\\Sobre.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:52:57.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sobre.aspx",
+              "DocumentMoniker": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\gestao_vendas_\\gestao_vendas_\\Sobre.aspx",
+              "RelativeDocumentMoniker": "gestao_vendas_\\Sobre.aspx",
+              "ToolTip": "C:\\curso_ATOS_CSharp\\Dotnet_CSharp\\Sistema_Gestao_Vendas_Brigadeiro\\gestao_vendas_\\gestao_vendas_\\Sobre.aspx",
+              "RelativeToolTip": "gestao_vendas_\\Sobre.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-24T08:44:58.704Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
