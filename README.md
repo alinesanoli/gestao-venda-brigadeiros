@@ -39,8 +39,8 @@ CREATE TABLE Clientes (
 ```
 ## 2. Tecnologias Utilizadas
 - **C#**: Utilizado para a implementação do backend da aplicação.
-- **ADO.NET**: Utilizado para a interação com o banco de dados SQL Server, permitindo a execução de comandos SQL e manipulação de dados.
-- **API ASP.NET**: A API utiliza o ADO.NET para gerenciar operações de CRUD (Create, Read, Update, Delete) nas tabelas do banco de dados. Utilizou-se o ADO.NET como uma opção paliativa, pois ainda não consegui conectar a API no Web Forms
+- **ADO.NET**: Utilizado para a interação com o banco de dados SQL Server, permitindo a execução de comandos SQL e manipulação de dados. Utilizou-se o ADO.NET como uma opção paliativa, pois ainda não foi possível conectar a API no Web Forms.
+- **API ASP.NET**: A API utiliza o ADO.NET para gerenciar operações de CRUD (Create, Read, Update, Delete) nas tabelas do banco de dados. 
 - **Web Forms**: Utilizado para a criação de páginas web dinâmicas, permitindo a construção das páginas "Sobre", "Vendas" e "Gastos".
 - **CSS**: Usado para o estilização das páginas web.
 
@@ -65,13 +65,16 @@ A aplicação faz uso de APIs RESTful para gerenciar operações de CRUD (Criar,
     - GET /api/Venda/BuscarTodasVendas: Retorna uma lista de todas as vendas.
     - POST /api/Venda/InserirDadosVendas: Insere uma nova venda no banco de dados.
 - **Gastos**
+
     - GET /api/GastosBrigadeiro/BuscarTodosOsGastos: Retorna uma lista de todos os gastos registrados.
     - POST /api/GastosBrigadeiro/InserirGasto: Insere um novo gasto no banco de dados.
 - **Encomenda**
+
     - GET /api/GastosBrigadeiro/BuscarTodosOsGastos: Retorna uma lista de todos os gastos registrados.
     - POST /api/GastosBrigadeiro/InserirGasto: Insere um novo gasto no banco de dados.
 ## 4. GitHub
 Repositório: https://github.com/alinesanoli
+
 Detalhes Relevantes: O repositório contém toda a estrutura do projeto, incluindo as classes do backend, a estrutura do banco de dados e as páginas web. Utilize o comando git clone para clonar o repositório.
 
 ## 5. Considerações Finais

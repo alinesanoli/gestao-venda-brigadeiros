@@ -92,5 +92,39 @@ namespace gestao_vendas_brigadeiro
                 }
             }
         }
+
+        protected void GastosGrid_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "DeleteGasto")
+            {
+                int IdGasto = Convert.ToInt32(e.CommandArgument);
+                DeletarGasto(IdGasto);
+            }
+        }
+
+        private void DeletarGasto(int gastoId)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "DELETE FROM Gastos WHERE IdGastos = @IdGastos";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@IdGastos", gastoId);
+                    cmd.ExecuteNonQuery();
+
+                    lblMensagem.Text = "Gastos deletados com sucesso!";
+
+                    CarregarGastos();
+                }
+                catch (Exception ex)
+                {
+                    lblMensagem.Text = "Erro ao deletar gastos: " + ex.Message;
+                }
+            }
+        }
+
+
     }
-}
+    }

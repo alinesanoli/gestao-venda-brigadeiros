@@ -11,7 +11,7 @@ namespace gestao_vendas_brigadeiro
 {
 
 
-    public partial class Gastos
+    public partial class VendaBrigadeiros
     {
 
         /// <summary>
@@ -24,57 +24,48 @@ namespace gestao_vendas_brigadeiro
         protected global::System.Web.UI.WebControls.Label lblMensagem;
 
         /// <summary>
-        /// Controle txtInsumo.
+        /// Controle txtIdVenda.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtInsumo;
+        protected global::System.Web.UI.WebControls.TextBox txtIdVenda;
 
         /// <summary>
-        /// Controle txtValorUnitario.
+        /// Controle ddlBrigadeiro.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtValorUnitario;
+        protected global::System.Web.UI.WebControls.DropDownList ddlBrigadeiro;
 
         /// <summary>
-        /// Controle txtQuantidadeComprada.
+        /// Controle txtQuantidade.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtQuantidadeComprada;
+        protected global::System.Web.UI.WebControls.TextBox txtQuantidade;
 
         /// <summary>
-        /// Controle txtDataCompra.
+        /// Controle btnAdicionarBrigadeiro.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDataCompra;
+        protected global::System.Web.UI.WebControls.Button btnAdicionarBrigadeiro;
 
         /// <summary>
-        /// Controle btnAdicionarGasto.
+        /// Controle VendaBrigadeirosGrid.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdicionarGasto;
-
-        /// <summary>
-        /// Controle GastosGrid.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GastosGrid;
+        protected global::System.Web.UI.WebControls.GridView VendaBrigadeirosGrid;
     }
 }

@@ -80,3 +80,13 @@ ALTER COLUMN DataCadastro DATE;
 
 ALTER TABLE Clientes
 ADD CONSTRAINT DF_Clientes_DataCadastro DEFAULT GETDATE() FOR DataCadastro;
+
+--teste para verificar recuperação de dados da tabela vendas
+
+INSERT INTO Vendas (IdCliente, DataVenda, ValorTotal, FormaPagamento) 
+VALUES (2, '2029-09-24', 150.5, 'pix');
+
+INSERT INTO VendaBrigadeiros (IdVenda, IdBrigadeiro, Quantidade) 
+VALUES (11, 1, 10), 
+       (11, 2, 10), 
+       (11, 3, 10);

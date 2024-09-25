@@ -109,6 +109,7 @@ navbar-brand {
     .btnCadastrarVenda:hover {
         background-color: #a0522d;
     }
+
 /* Estilo da GridView */
 #VendasGrid {
     width: 100%;

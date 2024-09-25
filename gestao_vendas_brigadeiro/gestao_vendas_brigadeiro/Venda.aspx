@@ -35,7 +35,7 @@
     <hr />
     
     <h1>Lista de Vendas</h1>
-    <asp:GridView ID="VendasGrid" runat="server" AutoGenerateColumns="False">
+    <asp:GridView ID="VendasGrid" runat="server" AutoGenerateColumns="False"  OnRowCommand="VendasGrid_RowCommand">
         <Columns>
             <asp:BoundField DataField="IdVenda" HeaderText="ID Venda" />
             <asp:BoundField DataField="IdCliente" HeaderText="ID Cliente" />
